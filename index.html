@@ -1,0 +1,126 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>test for web</title>
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <!--<link rel="stylesheet" href="admin/css/default.css">-->
+        <style>
+            /*for test*/
+            .box{
+                border:dashed red 1px;
+            }
+            .speBox{
+                border: dashed blue 1px;
+            }
+            .pictureDiv {
+                margin: 4px;
+                position: relative;
+            }
+            .decoration-text{
+                position: absolute;
+                left:60%;
+                top:10%;
+                /*宽度*/
+                width: 38%;
+                text-align: center;
+            }
+            body{
+                background: cornsilk;
+                /*width: 400px;*/
+                height: 800px;
+            }
+            .mock{
+                height:20px;
+                width: 500px;
+                background:gainsboro;
+            }
+            .image{
+                width: 100%;
+            }
+            body{
+                width: 400px;
+                height: 500px;
+            }
+        </style>
+    </head>
+    
+    <body class="speBox" style="padding: 10px">
+
+        <div class="box" style="padding: 10px;">
+            <h4>test add text to picture(relative&&absolute)</h4>
+            <div class="speBox pictureDiv">
+                <img class="image" src="picture/picai.JPEG">
+                <p class="box decoration-text">
+                    dongfusong is a
+                    good guy dongfusong is a good guy dongfusong is a dsfsdf
+                </p>
+            </div>
+        </div>
+        <h4>test padding margin</h4>
+        <div class="speBox"  style="padding: 7px">
+        <div class="speBox" style="width: 40px; height: 10px; padding: 100px">
+        <!--<div class="box" style="margin: 10px;padding: 10px">-->
+        <!--</div>-->
+        </div>
+        </div>
+
+        <!--test float-->
+        <h4>test float</h4>
+            <div style="background: whitesmoke" class="box">
+            <div class="speBox" style="width: 120px;height: 50px; float: left">
+
+            </div>
+        <div class="speBox" style="width: 120px;height: 60px; float: right">
+
+        </div>
+            <div class="box" style="clear: both"></div>
+            <div class="box" style="height: 50px; clear: both; margin-top: 20px">
+        </div>
+        </div>
+
+        <div style="display: flex; flex-direction: row; align-items: stretch; justify-content: space-around;
+            width: 400px; height: 300px;";  class="box">
+            <div class="box" style="display: flex; flex:1;flex-direction: column; justify-content: space-between">
+                <p>dongufsong is a godo gy</p>
+                <p>hahadof ponpopon nonon </p>
+            </div>
+            <div class="box" style="flex:1">xxxxxxxxxx</div>
+            <div class="box" style="flex:1">dsfdsfdsfs</div>
+            <div class="box" style="flex:1">xxxxxxxxxx</div>
+        </div>
+
+            <div class="box" style="padding:10px; margin-right: 40px">
+                <p class="mock"></p>
+                <p class="mock"></p>
+                <p class="mock"></p>
+                <p class="mock"></p>
+                <p class="mock"></p>
+                <p class="mock"></p>
+                <p class="mock"></p>
+                <p class="mock"></p>
+                <p class="mock"></p>
+                <p class="mock"></p>
+            </div>
+
+            <div style="position: relative">
+                <div style="position: absolute; bottom: 100px; width: 100%; display: flex;
+                align-items: flex-start; justify-content: space-around">
+                    <div class="box">1</div>
+                    <div class="box">1</div>
+                    <div class="box">1</div>
+                    <div class="box">1</div>
+                </div>
+            </div>
+    </body>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/show.js"></script>
+    <script>
+    </script>
+
+    </body>
+</html>
